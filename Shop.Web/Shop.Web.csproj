@@ -193,24 +193,6 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Shop.Common\Shop.Common.csproj">
-      <Project>{899502f1-6850-4a81-9314-3a41c442dcca}</Project>
-      <Name>Shop.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shop.Data\Shop.Data.csproj">
-      <Project>{ba58e1dd-c486-4720-942f-fb58153a948f}</Project>
-      <Name>Shop.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shop.Model\Shop.Model.csproj">
-      <Project>{f5b4c0c4-d732-49f7-bb74-1293e7893a8c}</Project>
-      <Name>Shop.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shop.Service\Shop.Service.csproj">
-      <Project>{0ba50552-632c-49b5-9cde-7c36058159fa}</Project>
-      <Name>Shop.Service</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
