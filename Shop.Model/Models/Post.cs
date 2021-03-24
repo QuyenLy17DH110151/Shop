@@ -1,4 +1,5 @@
 ﻿using Shop.Model.Abstract;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,7 +10,7 @@ namespace Shop.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { set; get; }
+        public string ID { set; get; }
 
         [Required]
         [MaxLength(256)]
@@ -37,5 +38,6 @@ namespace Shop.Model.Models
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
+        public virtual IEnumerable<PostTag> PostTags { get; set; }
     }
 }

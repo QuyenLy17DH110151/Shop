@@ -8,7 +8,7 @@ namespace Shop.Model.Models
     {
         [Key]
         [Column(Order = 1)]
-        public int PostID { set; get; }
+        public string PostID { set; get; }
 
         [Key]
         [Column(TypeName = "varchar",Order =2)]
